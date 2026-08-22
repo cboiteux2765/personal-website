@@ -28,5 +28,5 @@ export default function BootScreen({ children }) {
     };
   }, []);
 
-  return <>{children}{isVisible && <div className={`boot-screen${isLeaving ? " is-leaving" : ""}`} role="status" aria-live="polite"><div><p className="boot-face">:(</p><p>Your personal website ran into a problem and needs to restart.</p><p>We&apos;re just collecting some information, and then you&apos;ll be on your way.</p><p className="boot-progress">{progress}% complete</p><p className="boot-code">For more information about this issue and possible fixes, visit<br />clementboiteux.dev</p></div></div>}</>;
+  return <>{children}{isVisible && <div className={`boot-screen${isLeaving ? " is-leaving" : ""}`} role="status" aria-live="polite"><div><p className="boot-face">:(</p><p>Your personal website ran into a problem and needs to restart.</p><p>We&apos;re just collecting some information, and then you&apos;ll be on your way.</p><p className="boot-progress">{progress}% complete</p><p className="boot-code">For more information about this issue and possible fixes, go to <br />https://clement-boiteux.netlify.app/</p></div></div>}</>;
 }
