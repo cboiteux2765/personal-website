@@ -4,7 +4,12 @@ import SiteNav from "./site-nav";
 
 export const metadata = {
   title: siteData.site.title,
-  description: siteData.site.description
+  description: siteData.site.description,
+  icons: {
+    icon: "/me.jpg",
+    shortcut: "/me.jpg",
+    apple: "/me.jpg"
+  }
 };
 
 export default function RootLayout({ children }) {
